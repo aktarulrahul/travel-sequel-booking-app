@@ -1,0 +1,32 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  // To define width is the flex base property
+  flex: 0 0 18%;
+  // flex: [grow] [shrink] [base]
+  // grow => 0 => we don't the element to grow if there is some space
+  // shrink => 0 => we don't want it to shrink(সংকুচিত বা ছোটো হয়ে যাওয়া) if there is not enough space\
+  // base => 18% => we always want to keep at 18%
+}
+
+.hotel-view {
+  background-color: orangered;
+  flex: 1; // grow => 1 means cover all the available space
+}
